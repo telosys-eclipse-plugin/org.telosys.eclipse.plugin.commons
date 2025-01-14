@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Commons
+Bundle-SymbolicName: org.telosys.eclipse.plugin.commons
+Bundle-Version: 4.2.0
+Bundle-Vendor: Telosys
+Bundle-ClassPath: .,
+ lib/telosys-tools-all-4.2.0.jar
+Automatic-Module-Name: org.telosys.eclipse.plugin.commons
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: org.telosys.tools.api,
+ org.telosys.tools.commons.cfg,
+ org.telosys.tools.commons.depot
