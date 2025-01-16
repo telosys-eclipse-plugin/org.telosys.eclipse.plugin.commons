@@ -10,4 +10,5 @@ Automatic-Module-Name: org.telosys.eclipse.plugin.commons
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: org.telosys.tools.api,
  org.telosys.tools.commons.cfg,
- org.telosys.tools.commons.depot
+ org.telosys.tools.commons.depot,
+ org.telosys.tools.dsl
