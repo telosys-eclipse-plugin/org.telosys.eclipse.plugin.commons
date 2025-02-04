@@ -8,7 +8,12 @@ Bundle-ClassPath: .,
  lib/telosys-tools-all-4.2.0.jar
 Automatic-Module-Name: org.telosys.eclipse.plugin.commons
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Export-Package: org.telosys.tools.api,
+Export-Package: org.telosys.eclipse.plugin.commons,
+ org.telosys.tools.api,
+ org.telosys.tools.commons,
+ org.telosys.tools.commons.bundles,
  org.telosys.tools.commons.cfg,
  org.telosys.tools.commons.depot,
- org.telosys.tools.dsl
+ org.telosys.tools.dsl,
+ org.telosys.tools.generic.model
+Require-Bundle: org.eclipse.ui;bundle-version="3.118.100"
