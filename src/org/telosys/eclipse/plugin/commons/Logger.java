@@ -4,7 +4,7 @@ import org.eclipse.swt.widgets.Event;
 
 public class Logger {
 	
-	public static boolean active = false;
+	private static final boolean active = true;
 
 	private static void println(String msg) {
 		System.out.println(msg);
