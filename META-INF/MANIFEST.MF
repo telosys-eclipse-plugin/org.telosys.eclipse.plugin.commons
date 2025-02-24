@@ -19,6 +19,8 @@ Export-Package: org.telosys.eclipse.plugin.commons,
  org.telosys.tools.commons.observer,
  org.telosys.tools.db.observer,
  org.telosys.tools.dsl,
+ org.telosys.tools.dsl.commons,
+ org.telosys.tools.dsl.tags,
  org.telosys.tools.generic.model
 Require-Bundle: org.eclipse.ui;bundle-version="3.118.100",
  org.eclipse.ui.console;bundle-version="3.10.0"
