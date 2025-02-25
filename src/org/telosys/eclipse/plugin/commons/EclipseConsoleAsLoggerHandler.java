@@ -13,12 +13,29 @@ public class EclipseConsoleAsLoggerHandler extends Handler {
 	
     private MessageConsoleStream consoleStream;
 
+    /**
+     * Constructor
+     */
+    public EclipseConsoleAsLoggerHandler() {
+    	this("Telosys Logger"); // Default console name
+    }
+    
+    /**
+     * Constructor
+     * @param consoleName
+     */
     public EclipseConsoleAsLoggerHandler(String consoleName) {
-        MessageConsole console = findConsole(consoleName);
-        this.consoleStream = console.newMessageStream();
-        super.setFormatter(new DefaultFormatter() ); // Formatter is hold by the super class
+//        MessageConsole console = findConsole(consoleName);
+//        this.consoleStream = console.newMessageStream();
+//        super.setFormatter(new DefaultFormatter() ); // Formatter is hold by the super class
+        this(consoleName, new DefaultFormatter());
     }
 
+    /**
+     * Constructor
+     * @param consoleName
+     * @param formatter
+     */
     public EclipseConsoleAsLoggerHandler(String consoleName, Formatter formatter) {
         MessageConsole console = findConsole(consoleName);
         this.consoleStream = console.newMessageStream();
@@ -50,9 +67,9 @@ public class EclipseConsoleAsLoggerHandler extends Handler {
         }
     }
 
-    private String formatRecord(LogRecord record) {
-        return record.getLevel() + ": " + record.getMessage();
-    }
+//    private String formatRecord(LogRecord record) {
+//        return record.getLevel() + ": " + record.getMessage();
+//    }
 
     @Override
     public void flush() {

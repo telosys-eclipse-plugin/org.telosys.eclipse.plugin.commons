@@ -1,0 +1,9 @@
+
+To use Logger in a plugin:
+
+In plugin "Activator":
+
+CustomRootLogger.setup("org.telosys.eclipse.plugin", Level.ALL, new EclipseConsoleAsLoggerHandler("Telosys Plugin Logger") );
+
+
+new EclipseConsoleAsLoggerHandler(consoleName)	
